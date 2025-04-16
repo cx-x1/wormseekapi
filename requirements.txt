@@ -1,0 +1,6 @@
+telethon
+beautifulsoup4
+aiohttp
+aiofiles
+together
+asyncio
