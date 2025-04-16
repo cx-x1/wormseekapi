@@ -4,10 +4,9 @@ from telethon import TelegramClient, events
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 import asyncio
-import aiohttp  # بدلًا من requests
+
 import aiofiles  # للتعامل مع الملفات بشكل غير متزامن
 from datetime import datetime
-import json
 import concurrent.futures
 import os
 from together import Together
@@ -15,10 +14,10 @@ from together import Together
 # إعداد المتغيرات الأساسية
 API_ID = '27862562'  # استبدل بـ API ID الخاص بك
 API_HASH = '4fb25b7f2f41bd60fdf975cf55e8da16'  # استبدل بـ API HASH الخاص بك
-BOT_TOKEN = '7651085225:AAEz9wIfPErfV9UXtXGUWaakRBvlJ9QmMGQ'
+BOT_TOKEN = '7651085225:AAHJKD0ID48NvjwygIMt8XAfnUX8OBbmsV8'
 CHANNEL_USERNAME = '@u0u0v'
 
-client = TelegramClient('bot2', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+client = TelegramClient('worm', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 # تعيين مفتاح API كمتغير بيئي
 os.environ["TOGETHER_API_KEY"] = "7493e4e0527c3f0b6832785b21685d6ab73672a59c2647dbb6ffb696628bde8b"
@@ -135,7 +134,7 @@ async def process_message(event):
 
         except Exception as e:
             await event.reply(f"الرجاء الاشتراك بلقناة \n@u0u0v")
-        
+
         finally:
             await temp_message.delete()
 
