@@ -15,7 +15,7 @@ from together import Together
 # إعداد المتغيرات الأساسية
 API_ID = '27862562'  # استبدل بـ API ID الخاص بك
 API_HASH = '4fb25b7f2f41bd60fdf975cf55e8da16'  # استبدل بـ API HASH الخاص بك
-BOT_TOKEN = '7559986887:AAG9LOOE8f3m66zkHK3OQj8fN-diioqHZiQ'
+BOT_TOKEN = '7651085225:AAEz9wIfPErfV9UXtXGUWaakRBvlJ9QmMGQ'
 CHANNEL_USERNAME = '@u0u0v'
 
 client = TelegramClient('bot2', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
